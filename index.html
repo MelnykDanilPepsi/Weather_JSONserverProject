@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="st.css" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+         <div class="container">
+            <div class="header__body">
+                <div class="header__logo">
+                    <div class="header__burger"><span></span></div>
+                    <img src="./images/weather/64x64/day/392.png" alt="">
+                </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link active">Home</a></li>
+                    <li><a href="#" class="nav__link">Donate</a></li>
+                    <li><a href="#" class="nav__link">Help</a></li>
+                    <li><a href="#" class="nav__link">Contact us</a></li>
+                    <li><a href="#" class="nav__link">More</a></li>
+                </ul>
+            </nav>
+            <div class="header__userBlock" >
+                <div class="userimg"></div>
+                <div class="userAvatar hiddenBlock"></div>
+                <div class="header__userInfo">
+                    <div  class="userinfo__image" alt=""></div>
+                    <p class="userInfo__name"></p>
+                    <p class="userInfo__email"></p>
+                    <p class="userInfo__password"></p>
+                    <p class="userInfo__balance"></p>
+                    <btn class="userInfo__quitBtn">Exit</btn>
+                </div>
+                <form action="#" class="UserBlock__Form">
+                    <input type="email" placeholder="Email" name="email" id="em">
+                    <input type="password" placeholder="Password" name="password" id="pas">
+                    <button class="formbtn" type="submit">Login</button> 
+                    <p class ="userBlock__request">Lorem, ipsum dolor.</p>
+                        <div class="userBlock__orBlock"><hr><span> or </span><hr></div>
+                     <a href="#">Regestration</a>
+                    <a href="#">Fogot password?</a>
+                </form>
+            </div>
+           </div>
+         </div>
+        </header>
+        <div class="main">
+            <!-- weather-app -->
+                <div class="weather-app">
+                    <div class="weather__container">
+                        <h3 class="brand">myweather</h3>
+                    <div class = container__block>
+                    <h1 class="temp">16&#176;</h1>
+                    <div class="city-time">
+                    <h1 class="name">Skhidnytsia</h1>
+                        <small>
+                            <span class="time">06:09</span> 
+                            -
+                            <span class="date">Monday Sep 19</span>
+                           
+                        </small>
+                    </div>
+                    
+                    <div class="weather">
+                        <img src="./images/weather/64x64/day/113.png" alt="weather" width="50" height="50" class="weatherIcon">
+                        <span class="condition">Cloudy</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel">
+                    <form  id="location" action="/">
+                        <input type="text" class="search" placeholder="Search Location"/>
+                        <button type="submit" class="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <ul class="cities">
+                        <li class="city">Saporoshje</li>
+                        <li class="city">Skhodnitsa</li>
+                        <li class="city">Kiev</li>
+                        <li class="city">Lviv</li>
+                        <li class="city">Donetsk</li>
+                        <li class="city">Feodosia</li>
+                    </ul>
+                    <ul class="details">
+                        <h4>Weather Details</h4>
+                        <li>
+                            <span>Cloudy</span>
+                            <span class="cloud">89%</span>
+                        </li>
+                        <li>
+                            <span>Humidity</span>
+                            <span class="humidity">64%</span>
+                        </li>
+                        <li>
+                            <span>Wind</span>
+                            <span class="wind">8km/h</span>
+                        </li>
+                    </ul>
+                    <ul class="location">
+                        <h4>Location</h4>
+                        <li><span class="country">Украина</span></li>
+                        <li><span class="region"></span></li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2c1cf155e8.js" crossorigin="anonymous"></script>
+    <script src="./header/header.js"></script>
+    <script src="./script.js"></script>
+    <script src="./main/weather.js"></script>
+</body>
+</html>

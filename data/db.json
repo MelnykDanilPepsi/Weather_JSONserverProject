@@ -1,0 +1,37 @@
+{
+"usersData" : [
+    {
+        "id" : 1,
+        "name" : "Eric Cartman",
+        "email" : "eric@gmail.com",
+        "password" : "eric1",
+        "avatar" : "./data/images/eric.gif",
+        "balance" : "$15.55"
+    },
+    {
+        "id" : 2,
+        "name" : "Kyle Broflovski",
+        "email" : "kyle@gmail.com",
+        "password" : "kyle1",
+        "avatar" : "./data/images/kyle.gif",
+        "balance" : "$50.00"
+    },
+    {
+        "id" : 3,
+        "name" : "Kenny",
+        "email" : "kenny@gmail.com",
+        "password" : "kenny1",
+        "avatar" : "./data/images/kenny.gif",
+        "balance" : "$3.14"
+    },
+    {
+        "id" : 4,
+        "name" : "Stan Marsh",
+        "email" : "stan@gmail.com",
+        "password" : "stan1",
+        "avatar" : "./data/images/stan.gif",
+        "balance" : "$43.24"
+
+    }
+ ]
+}

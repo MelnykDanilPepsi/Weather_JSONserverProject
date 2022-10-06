@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import "./header/header.scss";
+
+body{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    &.activeted{
+        @media (max-width:1000px) {
+            overflow: hidden;
+        }
+    }
+}
+*{
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1167px;
+    margin: 0 auto;
+    @media (max-width: 1200px){ max-width: 970px;}
+    @media (max-width: 992px) {  max-width: 750px;}
+    @media (max-width: 767px) { max-width: none;}
+}
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template: 110px 1fr 250px;
+}
+
+
+.weather-app{
+    min-height: 92vh;
+    background-image: url("./images/location/day/snow.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    transition: 500ms;
+    opacity: 1;
+    &:before {
+        content: "";
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.3);
+    }
+    @media (max-width: 500px) {
+         font-size: 12px;
+     }
+    @media  (max-width: 300px) {
+        min-height: 38em;
+      }
+      
+    .weather__container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 2em 3em 4em 3em;
+
+        .container__block{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width: 800px) {
+            position: relative;
+            width: 100%;
+            top: initial;
+        }
+    }
+    .city-time,
+    .temp,
+    .weather{
+        margin: 0 1em;
+    }
+  
+    .city-time{
+        h1{
+            margin: 0;
+            margin-bottom: 0.2em;
+            font-size: 3em; 
+        }
+       
+    }
+    .temp{
+        font-size: 7em;
+        margin: 0;
+      
+    }
+    .weather img{
+        display: block;
+        margin: 0.5em 0
+    }
+    .brand{
+        margin-top: 0px;
+    }
+    h1 h3{
+        font-weight:400;
+    }
+    .panel{
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background: rgba(110,110,110,0.25);
+        box-shadow: 0 8px 32px 0
+        rgba(0,0,0,0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid
+        rgba(255,255,255,0.18);
+        z-index: 1;
+        padding: 3em 2em;
+        overflow-y: scroll;
+        @media (max-width: 800px) {
+            position: relative;
+            width: 100%;
+            top: initial;
+        }
+        form{
+            margin-bottom: 3em;
+        }
+        .submit{
+            position: absolute;
+            top:0;
+            right: 0;
+            padding: 1.5em;
+            border: none;
+            outline: none;
+            background: #fa6d1b;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: 0.4s;
+            &:hover{
+                background: #fff !important;
+                color:#000;
+            }
+        }
+        .search{
+            background: none;
+            border: none;
+            border-bottom: 1px #ccc solid;
+            padding: 0 1em 0.5em 0;
+            width: 80%;
+            color: #fff;
+            font-size: 1.1em;
+            &:focus{
+                outline : none;
+            }
+            &::placeholder{
+                color: #ccc;
+            }
+        }
+        ul{
+            padding: 0 0 1em 0;
+            margin: 2em 0;
+            border-bottom: 1px #ccc solid;
+            li{
+                color: #ccc;
+                margin: 2.5em 0;
+            }
+            h4{
+                margin: 3em 0;
+            }
+           
+        }
+        .city{
+            display: block;
+            cursor: pointer;
+            &:hover{
+                color: #fff;
+            }
+        }
+        .details,.location{
+            li{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        
+    }
+}
+
+
